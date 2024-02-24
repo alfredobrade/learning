@@ -1,0 +1,15 @@
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\bin\Debug\net6.0\pruebitacs.exe
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\bin\Debug\net6.0\pruebitacs.deps.json
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\bin\Debug\net6.0\pruebitacs.runtimeconfig.json
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\bin\Debug\net6.0\pruebitacs.dll
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\bin\Debug\net6.0\pruebitacs.pdb
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.AssemblyInfoInputs.cache
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.AssemblyInfo.cs
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.csproj.CoreCompileInputs.cache
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.sourcelink.json
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.dll
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\refint\pruebitacs.dll
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.pdb
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\pruebitacs.genruntimeconfig.cache
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net6.0\ref\pruebitacs.dll

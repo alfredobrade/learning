@@ -1,0 +1,5 @@
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net8.0\pruebitacs.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net8.0\pruebitacs.AssemblyInfoInputs.cache
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net8.0\pruebitacs.AssemblyInfo.cs
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net8.0\pruebitacs.csproj.CoreCompileInputs.cache
+C:\Users\alfre\source\repos\JSLearning\pruebitacs\obj\Debug\net8.0\pruebitacs.sourcelink.json
