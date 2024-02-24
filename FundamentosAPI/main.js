@@ -25,12 +25,17 @@ async function loadRandomMichis() {
 
     if (res.status === 200) {
         const img1 = document.getElementById('img1');
+        const btn1 = document.getElementById('btn1');
         img1.src = data[0].url;
+        btn1.onclick = () => AddFavouriteMichi(data[0].id);
 
         const img2 = document.getElementById('img2');
+        const btn2 = document.getElementById('btn2');
         img2.src = data[1].url;
+        btn2.onclick = () => AddFavouriteMichi(data[1].id);
+
     } else {
-        spanError.innerHTML = "random - hubo un error" + res.status+data.message;
+        spanError.innerHTML = "random - hubo un error" + res.status + data.message;
     }
 };
 
@@ -41,8 +46,27 @@ async function loadFavouritesMichis() {
 
     if (res.status === 200) {
         console.log(data)
+        data.forEach(item => {
+
+            const section = document.getElementById('favoriteMichis');
+            const article = document.createElement('article');
+            const img = document.createElement('img');
+            const btn = document.createElement('button');
+            const btnText = document.createTextNode('Sacar Foto');
+
+            btn.appendChild(btnText);
+            if (item.image.url != null) img.src = item.image.url;
+            img.width = 150;
+            article.appendChild(img);
+            article.appendChild(btn);
+            section.appendChild(article);
+
+
+            console.log(item.image.url);
+
+        });
     } else {
-        spanError.innerHTML = "favourites - hubo un error" + res.status+data.message;
+        spanError.innerHTML = "favourites - hubo un error" + res.status + data.message;
     }
 };
 
@@ -56,17 +80,22 @@ async function AddFavouriteMichi(imageId) {
     console.log('newFavourite')
 
     const newFavourite = await fetch(
-        `${API_URL}/favourites?${API_key_query_param}`,
+        `${API_URL}/favourites`,
         {
             method: 'POST',
-            headers: { 'x-api-key': `${API_key}` },
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': `${API_key}`
+            },
             body: rawBody
         }
     )
+
+    const data = await newFavourite.json();
     if (newFavourite.status === 200) {
         console.log(newFavourite);
     } else {
-        spanError.innerHTML = "newFavourite - hubo un error" + newFavourite.status;
+        spanError.innerHTML = "newFavourite - hubo un error" + data.status;
     }
 
 
