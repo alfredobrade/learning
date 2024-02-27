@@ -1,9 +1,16 @@
-console.log("hello")
+console.log("hello");
 
 const API_key = 'live_XRF86ZUtutf6TJhQXSv0zmS9TcRQkUroMjssXChOVxqZRFPHXCW0QAi6NsnVUuqt';
 const API_key_query_param = 'api_key=live_XRF86ZUtutf6TJhQXSv0zmS9TcRQkUroMjssXChOVxqZRFPHXCW0QAi6NsnVUuqt';
-
 const API_URL = 'https://api.thecatapi.com/v1';
+
+//agregando axios con una instancia
+const api = axios.create({
+    baseURL: 'https://api.thecatapi.com/v1'
+});
+//agregando defout headers a la instancia de axios
+api.defaults.headers.common['x-api-key'] = API_key;
+
 
 const spanError = document.getElementById('error');
 
@@ -86,26 +93,32 @@ async function loadFavouritesMichis() {
 
 async function AddFavouriteMichi(imageId) {
 
-    var rawBody = JSON.stringify({
-        "image_id": `${imageId}`,
-        //"sub_id": "user-123"
-    });
-
     console.log('newFavourite')
 
-    const newFavourite = await fetch(
-        `${API_URL}/favourites`,
-        {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'x-api-key': `${API_key}`
-            },
-            body: rawBody
-        }
-    )
+    // var rawBody = JSON.stringify({
+    //     "image_id": `${imageId}`,
+    //     //"sub_id": "user-123"
+    // });
 
-    const data = await newFavourite.json();
+    //-- llamando a api con fetch --
+    // const newFavourite = await fetch(
+        // `${API_URL}/favourites`,
+        // {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //         'x-api-key': `${API_key}`
+        //     },
+        //     body: rawBody
+        // }
+        // )
+        // const data = await newFavourite.json();
+
+        //-- llamando a api con axios --
+        const newFavourite = await api.post('/favourites',{
+            image_id: imageId,
+        });
+
     if (newFavourite.status === 200) {
         console.log(newFavourite);
         reload();
@@ -128,6 +141,8 @@ async function deleteMichi(id) {
         }
     )
     const data = await res.json();
+    
+   
     if (res.status === 200) {
         console.log(res);
         console.log("michi eliminadi");
