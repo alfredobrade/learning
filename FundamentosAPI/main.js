@@ -139,6 +139,36 @@ async function deleteMichi(id) {
 
 }
 
+async function uploadMichi(){
+    const form = document.getElementById('uploadForm');
+    const formData = new FormData(form);
+
+    //imprimimos en consola los datos de la llave file almacenados en form
+    console.log(formData.get('file'));
+
+    //vamos a subir un nuevo archivo
+    const res = await fetch(`${API_URL}/images/upload`,
+    {
+        method: 'POST',
+        headers: {
+            //'Content-Type': 'multipart/form-data;boundary=----', despues de ; vienen los parametrosen el header
+            'x-api-key': `${API_key}`
+        },
+        body: formData
+        
+        
+        // {
+        //     file: formData.get('file'),
+
+        // }
+    });
+    const data = await res.json();
+
+    //hacer if y eso
+
+
+}
+
 function reload() {
     loadRandomMichis();
     loadFavouritesMichis();
