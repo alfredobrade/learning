@@ -1,4 +1,5 @@
 /node_modules/
 /curso_asincronismo/node_modules
-pruebitacs/obj
-pruebitacs/bin
+/pruebitacs/obj
+/pruebitacs/bin
+/cientifico/node_modules
