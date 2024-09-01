@@ -25,12 +25,12 @@ const spanError = document.getElementById('error');
 //     });
 
 async function loadRandomMichis() {
-    const res = await fetch(`${API_URL}/images/search?limit=2`)
-    const data = await res.json()
+    const res = await fetch(`${API_URL}/images/search?limit=2`);
+    const data = await res.json();
 
 
     if (res.status === 200) {
-    console.log('random')
+        console.log('random');
 
         const img1 = document.getElementById('img1');
         const btn1 = document.getElementById('btn1');

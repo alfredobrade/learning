@@ -1,0 +1,23 @@
+{
+  "name": "npm-package",
+  "version": "1.0.0",
+  "description": "learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "javascript",
+    "node"
+  ],
+  "author": "Alfredito",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.30.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.1"
+  }
+}
