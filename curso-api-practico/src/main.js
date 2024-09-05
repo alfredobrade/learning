@@ -48,7 +48,7 @@ async function getCategoriesPreview(){
     
     // console.log({data, movies});
     categories.forEach(category => {
-        console.log(category.name);
+        // console.log(category.name);
         const categoriesContainer = document.querySelector('#categoriesPreview .categoriesPreview-list');
         const categoryContainer = document.createElement('div');
         categoryContainer.classList.add('category-container');
@@ -71,7 +71,7 @@ async function getCategoriesPreview_withAxios(){
     
     // console.log({data, movies});
     categories.forEach(category => {
-        console.log(category.name);
+        // console.log(category.name);
         const categoriesContainer = document.querySelector('#categoriesPreview .categoriesPreview-list');
         const categoryContainer = document.createElement('div');
         categoryContainer.classList.add('category-container');
@@ -89,6 +89,19 @@ async function getCategoriesPreview_withAxios(){
     });
 }
 //############################################
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 getTrendingMoviesPreview();
 // getCategoriesPreview();
