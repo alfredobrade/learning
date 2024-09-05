@@ -1,4 +1,17 @@
 
+// for using axios
+const api = axios.create({
+    baseURL: BASE_URL,
+    headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+        //'x-api-key': API_KEY // but the api require the key in query parameters
+    },
+    params: {
+        'api_key': API_KEY,
+        'language': LANGUAGE[2]
+    },
+});
+
 
 console.log('Hello World!');
 
@@ -27,7 +40,7 @@ async function getTrendingMoviesPreview(){
 
     });
 }
-    
+//################    
 async function getCategoriesPreview(){
     const res = await fetch(`${BASE_URL}/genre/movie/list?api_key=${API_KEY}&language=${LANGUAGE[2]}`);
     const data = await res.json();
@@ -52,17 +65,32 @@ async function getCategoriesPreview(){
 
     });
 }   
+async function getCategoriesPreview_withAxios(){
+    const { data } = await api('/genre/movie/list');
+    const categories = data.genres;
+    
+    // console.log({data, movies});
+    categories.forEach(category => {
+        console.log(category.name);
+        const categoriesContainer = document.querySelector('#categoriesPreview .categoriesPreview-list');
+        const categoryContainer = document.createElement('div');
+        categoryContainer.classList.add('category-container');
+
+        const categoryTitle = document.createElement('h3');
+        categoryTitle.classList.add('category-title');
+        categoryTitle.setAttribute('id', `id${category.id}`);
+        const categoryTitleText = document.createTextNode(category.name);
+        
+
+        categoryTitle.appendChild(categoryTitleText);
+        categoryContainer.appendChild(categoryTitle);
+        categoriesContainer.appendChild(categoryContainer);
+
+    });
+}
+//############################################
 
 getTrendingMoviesPreview();
-getCategoriesPreview();
+// getCategoriesPreview();
+getCategoriesPreview_withAxios();
 
-const api = axios.create({
-    baseURL: BASE_URL,
-    headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-        //'x-api-key': API_KEY // the api require the key in query parameters
-    },
-    params: {
-        'api-key': API_KEY,
-    },
-});
