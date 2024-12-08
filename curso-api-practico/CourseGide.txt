@@ -1,0 +1,13 @@
+- Get with fetch
+- Get with axios
+
+--- navigation - events
+- Location
+para leer la url en donde estamos parados
+- On hash change
+para ejecutar cierto codigo cada vez que cambie el hash
+es posible cambiar el hash de la pagina
+* location.hash da el hash de la url y tambien podemos asignarle uno nuevo, 
+    luego con onHashChange capturamos el cambio de hash
+location.hash = "";
+window.addEventListener('hashchange', () => someMethod() );
