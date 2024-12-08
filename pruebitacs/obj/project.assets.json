@@ -8,19 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\alfre\\.nuget\\packages\\": {}
+    "C:\\Users\\alfre\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alfre\\source\\repos\\JSLearning\\pruebitacs\\pruebitacs.csproj",
+      "projectUniqueName": "C:\\Users\\alfre\\source\\repos\\learningJS\\pruebitacs\\pruebitacs.csproj",
       "projectName": "pruebitacs",
-      "projectPath": "C:\\Users\\alfre\\source\\repos\\JSLearning\\pruebitacs\\pruebitacs.csproj",
+      "projectPath": "C:\\Users\\alfre\\source\\repos\\learningJS\\pruebitacs\\pruebitacs.csproj",
       "packagesPath": "C:\\Users\\alfre\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alfre\\source\\repos\\JSLearning\\pruebitacs\\obj\\",
+      "outputPath": "C:\\Users\\alfre\\source\\repos\\learningJS\\pruebitacs\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\alfre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

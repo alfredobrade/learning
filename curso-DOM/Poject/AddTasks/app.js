@@ -19,7 +19,7 @@ taskForm.addEventListener("submit", (event) => {
 function createTaskElement(task) {
   const li = document.createElement("li");
   li.textContent = task;
-  li.append(createButton("âŒ", "delete-btn"), createButton("âœï¸", "edit-btn"));
+  li.append(createButton("❌", "delete-btn"), createButton("✏️", "edit-btn"));
   return li;
 }
 
