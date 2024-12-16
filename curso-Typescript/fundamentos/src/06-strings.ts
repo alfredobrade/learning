@@ -1,0 +1,3 @@
+(()=> {
+    let productTitle = 'my title'
+})();
