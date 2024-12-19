@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("pruebitacs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+651f38a5d90cd4df361f2746aebb96b603fc235b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+12fff667c74dd279345dde87667cb4efdc634235")]
 [assembly: System.Reflection.AssemblyProductAttribute("pruebitacs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("pruebitacs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
