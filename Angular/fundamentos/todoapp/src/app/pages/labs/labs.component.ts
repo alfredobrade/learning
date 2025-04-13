@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet, CommonModule],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  selector: 'app-labs',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './labs.component.html',
+  styleUrl: './labs.component.css'
 })
-export class AppComponent {
+export class LabsComponent {
   title = 'todoapp';
   welcome = 'hola';
   tasks = [
